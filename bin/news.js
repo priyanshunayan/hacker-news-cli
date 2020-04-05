@@ -1,10 +1,9 @@
 #! /usr/bin/env node
 
-const CredentialManager = require('../lib/credential-manager');
-const creds = new CredentialManager('news');
-async function main() {
-    let [key, secret] = await creds.getKeyAndSecret();
-    console.log(key, secret);
-}
+const program = require('commander');
+const pkg = require('../package.json');
 
-main().catch(console.error);
+program
+    .version(pkg.version)
+    .command('configure', "Configure your interest")
+    .parse(process.argv)

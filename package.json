@@ -27,6 +27,7 @@
     "sinon": "^9.0.1"
   },
   "dependencies": {
+    "commander": "^5.0.0",
     "configstore": "^5.0.1",
     "inquirer": "^7.1.0",
     "keytar": "^5.4.0"
