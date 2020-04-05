@@ -7,7 +7,7 @@
     "test": "node_modules/.bin/mocha"
   },
   "bin": {
-    "news": "./bin/news.js"
+    "hacker": "./bin/news.js"
   },
   "repository": {
     "type": "git",
@@ -27,9 +27,13 @@
     "sinon": "^9.0.1"
   },
   "dependencies": {
+    "colors": "^1.4.0",
     "commander": "^5.0.0",
     "configstore": "^5.0.1",
     "inquirer": "^7.1.0",
-    "keytar": "^5.4.0"
+    "keytar": "^5.4.0",
+    "node-emoji": "^1.10.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5"
   }
 }
