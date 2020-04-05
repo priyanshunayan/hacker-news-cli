@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "news": "./bin/news.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/priyanshunayan/hacker-news-cli.git"
