@@ -18,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/priyanshunayan/hacker-news-cli/issues"
   },
-  "homepage": "https://github.com/priyanshunayan/hacker-news-cli#readme"
+  "homepage": "https://github.com/priyanshunayan/hacker-news-cli#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  },
+  "dependencies": {
+    "configstore": "^5.0.1",
+    "inquirer": "^7.1.0"
+  }
 }
