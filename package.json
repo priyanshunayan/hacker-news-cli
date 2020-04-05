@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/mocha"
   },
   "bin": {
     "news": "./bin/news.js"
@@ -20,10 +20,15 @@
   },
   "homepage": "https://github.com/priyanshunayan/hacker-news-cli#readme",
   "devDependencies": {
-    "eslint": "^6.8.0"
+    "chai": "^4.2.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-mocha": "^6.3.0",
+    "mocha": "^7.1.1",
+    "sinon": "^9.0.1"
   },
   "dependencies": {
     "configstore": "^5.0.1",
-    "inquirer": "^7.1.0"
+    "inquirer": "^7.1.0",
+    "keytar": "^5.4.0"
   }
 }
