@@ -6,9 +6,6 @@
     "access": "public"
   },
   "main": "index.js",
-  "scripts": {
-    "test": "node_modules/.bin/mocha"
-  },
   "bin": {
     "hacker": "./bin/hacker.js"
   },
