@@ -1,2 +1,10 @@
 language: node_js
 node_js: lts/carbon
+deploy:
+  provider: npm
+  email: priyanshu.cs17@nitp.ac.in
+  api_key:
+    secure: qPpNVxPKQKglmwvQcQlZfB5NcycblhB7SkWFl3GeksOt2omoLDygJZt48r4+aolBg1f7xyudtG4gX1irwaQ2tnLTzcMenJPgDzIh0mSIja60nYJGa4DaoqckKJ7ASHU2wseqrUTVGxMTlGCAaA9CFdVVeK0SVRx5qmpi15wsp0fXob1CQ0j9PJnHwtGQjs/nVgFBShBExB1h1kDxs7dAutz0VhxjztzIxMkF0FcQYJzFxIw8FgLhSAsqqK04pWRl/ewGuKYuryDt+LEGLgUTY7Yg6brVByQ21onNe0tNGqv9rcVaGepgRICOHcEEQvZXPn/3dv/TksK7N5YoLHNnO3msTYzXHfeZ+jAFGwcrAscONU6Yc63Wbt10xGAhfO2qW2mZO8OF48ggUjOlMdjla402p/ENdwe/CCqmUGh6rkJ8muuIuYxsDIW/caqLdJl7kV0HaFi0nh2fTPY0LU1I0ImygNQmV7CK2y6ibMJOwgU6aRWlZWLM+bOBXjcmmwQ98pO3gTDpDAn/uw2S6zmGHC2ch0d74uUPyyrFrlod79kNmn5EJ3hdaSKg2cv6kjWNGmfAVnaNIeEW0VJa1cnrfTmkhifUy6SoKYdW0rSJEEYXVHimSpvQYq8O7NIhZvXlSycp5ShbkcAi/+sbWLZuUTZo3V4zq05GtVDMc++Rio0=
+  on:
+    tags: true
+    repo: priyanshunayan/hacker-news-cli
