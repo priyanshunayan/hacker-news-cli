@@ -15,8 +15,11 @@ See the Latest news by:
 This will give twenty results. Change the number to change the number of news items.
 
 Similarly:
+
 > hacker best
+
 > hacker top
+
 > hacker top --number 100
 
 If you find it useful, do not forget to give it a star. :)
