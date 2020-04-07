@@ -33,6 +33,7 @@
     "inquirer": "^7.1.0",
     "keytar": "^5.4.0",
     "node-emoji": "^1.10.0",
+    "open": "^7.0.3",
     "request": "^2.88.2",
     "request-promise": "^4.2.5"
   }
