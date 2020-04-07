@@ -2,6 +2,9 @@
 
 const { program } = require('commander');
 const pkg = require('../package.json');
+const updateNotifier = require('update-notifier');
+
+updateNotifier({ pkg }).notify({ isGlobal: true });
 
 program
     .version(pkg.version)
