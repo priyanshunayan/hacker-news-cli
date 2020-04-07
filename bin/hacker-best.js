@@ -54,11 +54,16 @@ const parseAndDisplayNews = (news) => {
         }
     ]).then(ans => {
         let url;
+        let id;
         news.forEach(newsItem => {
             if (newsItem.title === (ans.best.split(' |')[0])) {
                 url = newsItem.url;
+                id = newsItem.id;
             }
         })
+        if (url == undefined) {
+            url = `https://news.ycombinator.com/item?id=${id}`;
+        }
         open(url).catch(err => {
             open("https://news.ycombinator.com/");
             console.log('Oops unable to open browser.', err);
