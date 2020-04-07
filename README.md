@@ -10,7 +10,7 @@ Install this package by running:
 ## Usage
 
 See the Latest news by:
-> hacker latest -n 20
+> hacker top -n 20
 
 This will give twenty results. Change the number to change the number of news items.
 
@@ -18,8 +18,14 @@ Similarly:
 
 > hacker best
 
-> hacker top
+> hacker latest
 
-> hacker top --number 100
+> hacker latest --number 100
+
+
+For help use:
+
+> hacker --help
+
 
 If you find it useful, do not forget to give it a star. :)
