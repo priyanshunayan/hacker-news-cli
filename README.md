@@ -5,7 +5,7 @@ This package enables you read top, latest and best news from hacker news right f
 ## Installation Steps
 
 Install this package by running:
-> sudo npm install -g @priyanshunayan/@hackernews-cli
+> sudo npm i @priyanshunayan/hackernews-cli
 
 ## Usage
 
