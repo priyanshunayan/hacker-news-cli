@@ -5,6 +5,9 @@ var inquirer = require('inquirer');
 const open = require('open');
 const pkg = require('../package.json');
 const program = require('commander');
+const ora = require('ora');
+
+const spinner = ora('Getting hacker news for you').start();
 
 program.version(pkg.version)
     .option('-n, --number <num>', 'Number of news items you want to see', 10)
@@ -40,6 +43,7 @@ const parseAndDisplayNews = (news) => {
         let res = newItem.title + " | " + "By: " + author;
         titles.push(res);
     })
+    spinner.stop();
 
     inquirer.prompt([
         {

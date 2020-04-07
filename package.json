@@ -27,6 +27,7 @@
     "sinon": "^9.0.1"
   },
   "dependencies": {
+    "cli-spinners": "^2.3.0",
     "colors": "^1.4.0",
     "commander": "^5.0.0",
     "configstore": "^5.0.1",
@@ -34,6 +35,7 @@
     "keytar": "^5.4.0",
     "node-emoji": "^1.10.0",
     "open": "^7.0.3",
+    "ora": "^4.0.3",
     "request": "^2.88.2",
     "request-promise": "^4.2.5"
   }
