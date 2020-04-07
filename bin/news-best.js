@@ -5,11 +5,13 @@ var inquirer = require('inquirer');
 const open = require('open');
 const pkg = require('../package.json');
 const program = require('commander');
+
 program.version(pkg.version)
     .option('-n, --number <num>', 'Number of news items you want to see', 10)
     .parse(process.argv);
 
 const number_of_news = program.number;
+
 const extractTen = (newsArray) => {
     let tempArray = [];
     for (let i = 0; i < number_of_news; i++) {
@@ -31,7 +33,7 @@ const parseAndDisplayNews = (news) => {
     const URLs = [];
     news.forEach(newItem => {
         URLs.push(newItem.url);
-    })
+    });
     const titles = [];
     news.forEach(newItem => {
         let author = newItem.by;
@@ -49,8 +51,7 @@ const parseAndDisplayNews = (news) => {
     ]).then(ans => {
         let url;
         news.forEach(newsItem => {
-            if (newsItem.title === ans.best) {
-                console.log("URL");
+            if (newsItem.title === (ans.best.split(' |')[0])) {
                 url = newsItem.url;
             }
         })
@@ -74,6 +75,7 @@ const extractNews = (newsIds) => {
         results.forEach(item => {
             news.push(JSON.parse(item));
         });
+        // console.log(news);
         parseAndDisplayNews(news);
     }).catch((err) => {
         console.log("ER", err);
