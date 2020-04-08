@@ -1,6 +1,6 @@
 {
   "name": "@priyanshunayan/hackernews-cli",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A CLI to read news from hacker news in command line",
   "publishConfig": {
     "access": "public"
