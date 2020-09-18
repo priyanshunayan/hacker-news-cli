@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.com/priyanshunayan/hacker-news-cli.svg?branch=master)](https://travis-ci.com/priyanshunayan/hacker-news-cli)
-[![npm version](https://badge.fury.io/js/%40priyanshunayan%2Fhackernews-cli.svg)](https://badge.fury.io/js/%40priyanshunayan%2Fhackernews-cli)
+
 
 # Hacker News Cli
 
